@@ -1,2 +1,19 @@
-<input type="text" [formControl]='nameControl' ><br>
-<input type="text" [formControl]='emailControl' >
+<label>Name:
+    <input type="text" [formControl]='nameControl' >
+</label>
+
+<label >Email:
+    <input type="text" [formControl]='emailControl'>
+</label>
+<button (click)="generateUser()">Submit</button>
+
+<div *ngFor="let user of users let i = index" class="usersDiv">
+
+         <p>Name:{{user.name}}</p>
+         <p>Email:{{user.email}}</p>
+         <p>Points:{{user.points}}</p>
+         <button (click)="incrimentPoints(i)">incriment</button>
+         <button (click)="decrementPoints(i)">decrement</button>
+
+</div>
+
