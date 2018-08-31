@@ -1,0 +1,18 @@
+.usersDiv p{
+    font-family: Verdana;
+    font-size:20px;
+    color:red;
+    border: 1px solid black;
+}
+
+input{
+    margin: 10px;
+}
+.usersDiv{
+    margin: 20px;
+    border:1px solid red;
+    width: 200px;
+}
+button{
+    margin: 10px;
+}
